@@ -1,24 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Food Nutrition Analyzer
+
+A Next.js application that uses Google's Gemini 2.0 Flash model to analyze food images and provide detailed nutritional information.
+
+## Features
+
+- 🍎 Upload food images for analysis
+- 🧠 AI-powered nutrition analysis using Gemini 2.0 Flash
+- 📊 Detailed breakdown of calories, macronutrients, and micronutrients
+- 💡 Health notes and dietary considerations
+- 📱 Responsive design with beautiful UI
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18+ installed
+- A Google AI API key (Gemini)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Setup Instructions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Navigate to the project directory:**
+   ```bash
+   cd newproj
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Get your Gemini API key:**
+   - Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
+   - Create a new API key
+   - Copy the API key
+
+4. **Configure environment variables:**
+   - Add your Gemini API key to `.env.local`:
+     ```
+     NEXT_PUBLIC_GEMINI_API_KEY=your_actual_api_key_here
+     ```
+
+5. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+6. **Open your browser:**
+   - Navigate to [http://localhost:3000](http://localhost:3000)
+   - Upload a food image and get detailed nutrition analysis!
 
 ## Learn More
 
