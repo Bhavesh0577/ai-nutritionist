@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import ImageAnalyzer from '@/components/ImageAnalyzer';
 
 export default function Home() {

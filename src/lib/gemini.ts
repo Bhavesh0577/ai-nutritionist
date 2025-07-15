@@ -50,7 +50,7 @@ export async function analyzeImage(imageFile: File): Promise<NutritionData> {
     }
 
     // Get the generative model (Gemini 2.0 Flash)
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-pro-preview-05-06' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
     // Convert image to the format required by Gemini
     const imagePart = await fileToGenerativePart(imageFile);    // Create a detailed prompt for nutrition analysis
@@ -107,7 +107,7 @@ export async function analyzeImage(imageFile: File): Promise<NutritionData> {
       }
 
       return nutritionData;
-    } catch (parseError) {
+    } catch (error) {
       console.error('Failed to parse AI response:', text);
       throw new Error('Failed to parse nutrition analysis. Please try again.');
     }

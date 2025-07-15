@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { analyzeImage, validateImageFile } from '@/lib/gemini';
 
 interface NutritionData {
@@ -121,9 +122,11 @@ const ImageAnalyzer = () => {
         {/* Image Preview */}
         {imagePreview && (
           <div className="mt-6 text-center">
-            <img
+            <Image
               src={imagePreview}
               alt="Selected food"
+              width={400}
+              height={300}
               className="max-w-sm mx-auto rounded-lg shadow-md"
             />
             <div className="mt-4 flex justify-center gap-4">
