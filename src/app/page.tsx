@@ -11,7 +11,7 @@ export default function Home() {
             AI Food Nutrition Analyzer
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Upload a food image and get detailed nutritional information powered by Gemini 2.0 Flash
+            Upload a food image and get detailed nutritional information
           </p>
         </div>
         
