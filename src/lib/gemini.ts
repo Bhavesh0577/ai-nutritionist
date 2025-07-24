@@ -49,7 +49,7 @@ export async function analyzeImage(imageFile: File): Promise<NutritionData> {
       throw new Error('Gemini API key is not configured. Please add NEXT_PUBLIC_GEMINI_API_KEY to your environment variables.');
     }
 
-    // Get the generative model (Gemini 2.0 Flash)
+    // Get the generative model (Gemini 2.5 Flash)
     const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
     // Convert image to the format required by Gemini
